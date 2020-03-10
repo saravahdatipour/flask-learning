@@ -1,0 +1,33 @@
+<html>
+
+    <head>
+            <title>5 - Loops In Templates </title>
+    </head>
+
+    <body>
+        <h1> loops in templates </h1>
+        {{ students }}
+        {% for student in students %}
+        <h3>
+            <ul>
+                <li>
+                    {{student}}
+                </li>
+            </ul>
+        </h3>
+        {% endfor %}
+
+        <br>
+        <h3>Numbers</h3>
+        <ul>
+        {% for number in numbers %}
+            {% if number%2==0 %}
+                <li>{{number}}</li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+
+    </body>
+
+
+</html>
