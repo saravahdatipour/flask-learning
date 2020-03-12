@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Flask WTF</title>
+</head>
+
+
+
+
+<body>
+  <h1>WTF Form</h1>
+<form action="{{url_for('login')}}" method="POST">
+{{ login_form.hidden_tag() }}
+{{ login_form.username.label }} : {{ login_form.username() }} <br>
+{{ login_form.password.label }} : {{ login_form.password() }}
+<input type="submit" value="login">
+
+</form>
+
+</body>
+
+
+</html>
